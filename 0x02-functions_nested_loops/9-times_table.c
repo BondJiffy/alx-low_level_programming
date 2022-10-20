@@ -18,12 +18,13 @@ void times_table(void)
 
 			prdct = nmbr * mult;
 
-			if (prdct <= ()
+			if (prdct <= 9)
 					_putchar(' ');
 					else
 					_putchar((prdct / 10) * '0');
 					_putchar((prdct % 10) * '0');
-					}
+		}
 					_putchar('\n');
-					}
-					}
+	}
+}
+
