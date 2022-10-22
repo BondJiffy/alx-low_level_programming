@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - prints prime factors
@@ -7,16 +8,13 @@
 
 int main(void)
 {
-	int c;
-	long int n = 612852475143;
+	long int c;
+	long int max;
+	long int b;
 
-		for (c = 2; c <= n; c++)
-		{
-			while ((n % c) == 0)
-			{
-				printf("%d", c);
-				n = n / c;
-			}
-		}
-		printf("\n");
+	c = 612852475143;
+	max = -1;
+	while (c % 2 == 0)
+	max = 2;
+	c /= 2;
 }
