@@ -2,7 +2,7 @@
 
 /**
  * print_line - draws straight lines
- * @n: the number of '-' to be drawn
+ * @n: the number of '_' to be drawn
  */
 
 void print_line(int n)
@@ -12,7 +12,7 @@ void print_line(int n)
 	if (n > 0)
 	{
 		for (q = 0; q < n; q++)
-			_putchar('-');
+			_putchar('_');
 	}
 	_putchar('\n');
 }
