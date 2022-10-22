@@ -10,7 +10,7 @@ int main(void)
 	int c;
 	long int n = 612852475143;
 
-		for (c = 2; n > 1; c++)
+		for (c = 2; c <= n; c++)
 		{
 			while ((n % c) == 0)
 			{
@@ -18,4 +18,5 @@ int main(void)
 				n = n / c;
 			}
 		}
+		printf("\n");
 }
