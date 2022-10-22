@@ -3,18 +3,23 @@
 /**
  * print_number - prints an integer
  * @n: number to be printed
- * Return: integer
  */
 
 void print_number(int n)
 {
-	int i = 0;
+	unsigned int i;
 
-	while (i >= 1)
+	if (n < 0)
 	{
-		if ((i % 10) == 0)
-			_putchar(i + '0');
-		_putchar('\n');
+		i = -n;
+		_putchar('-');
 	}
-	i++;
+	else
+	{
+		i = n;
+	}
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
 }
